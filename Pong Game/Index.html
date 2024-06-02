@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Pong Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="ball"></div>
+    <div id="paddle"></div>
+    <div id="score">0</div>
+    <div id="scoreBoard">
+      <h3>High Scores</h3>
+      <ul id="scoreList"></ul>
+    </div>
+  </div>
+  <button id="startButton">Start Game</button>
+  <button id="resetScoreboardBtn">Reset Scoreboard</button>
+  <div id="initialsModal">
+    <p>Enter your initials:</p>
+    <input type="text" id="initialsInput" maxlength="3">
+    <button id="submitInitials">Submit</button>
+  </div>
+  <button id="goToMain">Go to Main Page</button>
+
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('goToMain').addEventListener('click', function() {
+        window.location.href = 'Main.html';
+    });
+  </script>
+  
+</body>
+</html>
